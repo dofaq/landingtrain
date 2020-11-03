@@ -120,22 +120,12 @@ body {
 	&__header {
 		margin-bottom: 78px;
 	}
+
 	&__title {
 		color: white;
 		margin-bottom: 30px;
 		position: relative;
 		padding-bottom: 21px;
-		&:after {
-			content: "";
-			position: absolute;
-			width: 87px;
-			height: 4px;
-			left: 50%;
-			background-color: #000000;
-			opacity: 0.15;
-			margin-left: -43.5px;
-			margin-top: 50px;
-		}
 	}
 	&__text {
 		max-width: 603px;
@@ -149,16 +139,6 @@ body {
 	&__column {
 		flex: 1 1 20%;
 		text-align: center;
-		// &:nth-child(2) {
-		// 	width: 173px;
-		// }
-		// &:nth-child(3) {
-		// 	width: 197px;
-		// }
-		// &:last-child {
-		// 	margin-right: -97px;
-		// 	width: 189px;
-		// }
 	}
 }
 
@@ -200,17 +180,6 @@ body {
 		margin-bottom: 30px;
 		position: relative;
 		padding-bottom: 21px;
-		&:after {
-			content: "";
-			position: absolute;
-			width: 87px;
-			height: 4px;
-			left: 50%;
-			background-color: #000000;
-			opacity: 0.15;
-			margin-left: -43.5px;
-			margin-top: 50px;
-		}
 	}
 	&__row {
 		display: flex;
@@ -230,9 +199,11 @@ body {
 		height: 200px;
 		margin: auto;
 		margin-bottom: 20px;
+
 		img {
 			width: 100%;
 			height: 100%;
+			border-radius: 50%;
 		}
 	}
 	&__name {
@@ -288,17 +259,6 @@ body {
 		margin-bottom: 30px;
 		position: relative;
 		padding-bottom: 21px;
-		&:after {
-			content: "";
-			position: absolute;
-			width: 87px;
-			height: 4px;
-			left: 50%;
-			background-color: #000000;
-			opacity: 0.15;
-			margin-left: -43.5px;
-			margin-top: 50px;
-		}
 	}
 	&__text {
 		max-width: 568px;
@@ -372,21 +332,9 @@ body {
 		margin-bottom: 62px;
 	}
 	&__title {
-		color: #393939;
 		margin-bottom: 30px;
 		position: relative;
 		padding-bottom: 21px;
-		&:after {
-			content: "";
-			position: absolute;
-			width: 87px;
-			height: 4px;
-			left: 50%;
-			background-color: #000000;
-			opacity: 0.15;
-			margin-left: -43.5px;
-			margin-top: 50px;
-		}
 	}
 	&__text {
 		max-width: 515px;
@@ -483,20 +431,7 @@ body {
 	&__header {
 		margin-bottom: 71px;
 	}
-	&__title {
-		color: white;
-		&:after {
-			content: "";
-			position: absolute;
-			width: 87px;
-			height: 4px;
-			left: 50%;
-			background-color: #000000;
-			opacity: 0.15;
-			margin-left: -43.5px;
-			margin-top: 50px;
-		}
-	}
+
 	&__text {
 		color: white;
 		margin-top: 48px;
@@ -568,20 +503,7 @@ body {
 	&__header {
 		margin-bottom: 76px;
 	}
-	&__title {
-		color: white;
-		&:after {
-			content: "";
-			position: absolute;
-			width: 87px;
-			height: 4px;
-			left: 50%;
-			background-color: #000000;
-			opacity: 0.15;
-			margin-left: -43.5px;
-			margin-top: 50px;
-		}
-	}
+
 	&__text {
 		color: white;
 		margin-top: 48px;
@@ -707,6 +629,34 @@ body {
 		}
 	}
 }
+.services,
+.team,
+.skills,
+.portfolio,
+.reviews,
+.message {
+	&__title {
+		color: white;
+		&:after {
+			content: "";
+			position: absolute;
+			width: 87px;
+			height: 4px;
+			left: 50%;
+			background-color: #000000;
+			opacity: 0.15;
+			margin-left: -43.5px;
+			margin-top: 50px;
+		}
+	}
+}
+.team,
+.skills,
+.portfolio {
+	&__title {
+		color: #3c4761;
+	}
+}
 
 @media screen and (max-width: 1150px) {
 	.portfolio {
@@ -801,13 +751,10 @@ body {
 			margin-top: -10px;
 		}
 		&__menu {
-			// display: none; // Сделать бургер
 			position: absolute;
 			left: 0;
-			// padding-left: 30px;
 			margin-top: 38px;
 			nav {
-				// display: block;
 				flex-direction: column;
 				align-items: center;
 				justify-content: space-between;
@@ -816,9 +763,6 @@ body {
 				padding-top: 50px;
 				a {
 					display: flex;
-
-					// margin-bottom: 20px;
-					// margin: auto;
 					font-size: 40px;
 					justify-content: center;
 				}

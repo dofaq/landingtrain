@@ -209,18 +209,6 @@ body {
   padding-bottom: 21px;
 }
 
-.services__title:after {
-  content: "";
-  position: absolute;
-  width: 87px;
-  height: 4px;
-  left: 50%;
-  background-color: #000000;
-  opacity: 0.15;
-  margin-left: -43.5px;
-  margin-top: 50px;
-}
-
 .services__text {
   max-width: 603px;
   color: white;
@@ -290,18 +278,6 @@ body {
   padding-bottom: 21px;
 }
 
-.team__title:after {
-  content: "";
-  position: absolute;
-  width: 87px;
-  height: 4px;
-  left: 50%;
-  background-color: #000000;
-  opacity: 0.15;
-  margin-left: -43.5px;
-  margin-top: 50px;
-}
-
 .team__row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -331,6 +307,7 @@ body {
 .item-team__icon img {
   width: 100%;
   height: 100%;
+  border-radius: 50%;
 }
 
 .item-team__name {
@@ -398,18 +375,6 @@ body {
   margin-bottom: 30px;
   position: relative;
   padding-bottom: 21px;
-}
-
-.skills__title:after {
-  content: "";
-  position: absolute;
-  width: 87px;
-  height: 4px;
-  left: 50%;
-  background-color: #000000;
-  opacity: 0.15;
-  margin-left: -43.5px;
-  margin-top: 50px;
 }
 
 .skills__text {
@@ -500,22 +465,9 @@ body {
 }
 
 .portfolio__title {
-  color: #393939;
   margin-bottom: 30px;
   position: relative;
   padding-bottom: 21px;
-}
-
-.portfolio__title:after {
-  content: "";
-  position: absolute;
-  width: 87px;
-  height: 4px;
-  left: 50%;
-  background-color: #000000;
-  opacity: 0.15;
-  margin-left: -43.5px;
-  margin-top: 50px;
 }
 
 .portfolio__text {
@@ -634,22 +586,6 @@ body {
   margin-bottom: 71px;
 }
 
-.reviews__title {
-  color: white;
-}
-
-.reviews__title:after {
-  content: "";
-  position: absolute;
-  width: 87px;
-  height: 4px;
-  left: 50%;
-  background-color: #000000;
-  opacity: 0.15;
-  margin-left: -43.5px;
-  margin-top: 50px;
-}
-
 .reviews__text {
   color: white;
   margin-top: 48px;
@@ -744,22 +680,6 @@ body {
 
 .message__header {
   margin-bottom: 76px;
-}
-
-.message__title {
-  color: white;
-}
-
-.message__title:after {
-  content: "";
-  position: absolute;
-  width: 87px;
-  height: 4px;
-  left: 50%;
-  background-color: #000000;
-  opacity: 0.15;
-  margin-left: -43.5px;
-  margin-top: 50px;
 }
 
 .message__text {
@@ -919,6 +839,38 @@ body {
 
 .footer__menu .fb {
   letter-spacing: 0.48px;
+}
+
+.services__title,
+.team__title,
+.skills__title,
+.portfolio__title,
+.reviews__title,
+.message__title {
+  color: white;
+}
+
+.services__title:after,
+.team__title:after,
+.skills__title:after,
+.portfolio__title:after,
+.reviews__title:after,
+.message__title:after {
+  content: "";
+  position: absolute;
+  width: 87px;
+  height: 4px;
+  left: 50%;
+  background-color: #000000;
+  opacity: 0.15;
+  margin-left: -43.5px;
+  margin-top: 50px;
+}
+
+.team__title,
+.skills__title,
+.portfolio__title {
+  color: #3c4761;
 }
 
 @media screen and (max-width: 1150px) {
