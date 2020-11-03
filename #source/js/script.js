@@ -9,6 +9,9 @@ $(document).ready(function () {
 	$('.hi__burger').on('click', function (e) {
 		$(d).toggleClass('active');
 	});
+	$('.hi__menu-link').on('click', function (e) {
+		$(d).removeClass('active');
+	});
 });
 // $(document).ready(function () {
 // 	$('.hi__menu-link').on('click', function (e) {
