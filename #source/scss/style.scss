@@ -226,6 +226,12 @@ body {
 .item-team {
 	&__icon {
 		margin-bottom: 41px;
+		width: 200px;
+		height: 200px;
+		img {
+			width: 100%;
+			height: 100%;
+		}
 	}
 	&__name {
 		font-size: 24px;
