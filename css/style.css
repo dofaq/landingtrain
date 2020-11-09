@@ -79,6 +79,7 @@ body {
 }
 
 .hi {
+  display: block;
   padding-top: 57px;
   background: #87509c;
   padding-bottom: 145px;
@@ -109,7 +110,7 @@ body {
   padding-bottom: 2px;
 }
 
-.hi__menu nav {
+.hi__menu nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -963,12 +964,18 @@ body {
     margin-top: 38px;
     background: red;
     width: 100%;
-    height: 90vh;
-    top: -100%;
+    height: 100vh;
+    top: -110%;
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
   }
   .hi__menu nav {
+    height: 100vh;
+  }
+  .hi__menu nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -976,21 +983,22 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     height: 100%;
-    padding-bottom: 50px;
-    padding-top: 50px;
+    padding-bottom: 80px;
+  }
+  .hi__menu nav ul li {
+    line-height: 180px;
   }
   .hi__menu nav a {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     font-size: 40px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    width: 100vw;
+    height: 200px;
+    display: inline-block;
   }
   .hi__menu-link_active {
     background: none;
@@ -1066,14 +1074,9 @@ body {
   }
 }
 
-@media screen and (max-width: 400px) {
-  .hi,
-  .services,
-  .team,
-  .skills,
-  .portfolio,
-  .reviews,
-  .message {
-    padding-top: 30px;
+@media screen and (max-width: 380px) {
+  .hi__text {
+    font-size: 30px;
+    line-height: 30px;
   }
 }
